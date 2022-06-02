@@ -1,0 +1,198 @@
+
+* {
+  box-sizing: border-box;
+} 
+
+@font-face {
+  font-family: Gallient;
+  src: url(data/gallient.tff);
+  src: url('data/gallient-webfont.woff2') format('woff2'),
+      url('data/gallient-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: Palatino;
+  src: url(http://fonts.googleapis.com/css?family=Palatino);
+}
+
+body {
+  background-color: #141414;
+}
+
+.button {
+    width: 1.6%;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    top: 65px;
+}
+
+.container {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: repeat(2,1fr);
+  grid-template-rows: 200px 450px 300px 300px 400px 350px 300px 200px 100px;
+  margin-left: 220px;
+  margin-right: 220px;
+  font-family: sans-serif;
+  font-size: 16px;
+  column-gap: 20px;
+  padding-top: 100px;
+  color: #fffadb;
+}
+
+h1 {
+  font-family: Gallient;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  font-size: 72px;
+  text-align: right;
+
+}
+
+
+@media only screen and (max-width: 700px) {
+  .container {
+    grid-template-columns: 1fr;
+ }
+ h1 {
+  font-size: 40px;
+ }
+ p {
+ font-size: 11px;
+ }
+
+ .seta {
+  display: none;
+}
+
+}
+
+img {
+  width: 100%;
+}
+
+.about {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  height: 267px;
+}
+
+.gif1 {
+  grid-column: 1/2;
+  grid-row: 2/3;
+  width: 150%;
+  padding-right: 100px;
+}
+
+.text1 {
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+
+.gif3 {
+  width: 80%;
+  grid-column: 1/2;
+  grid-row: 3/4;
+}
+
+.excerto2 {
+  grid-column: 2/3;
+  grid-row: 3/4;
+  height: 240px;
+}
+
+.excerto1 {
+  grid-column: 1/2;
+  grid-row: 4/5;
+  height: 240px;
+}
+
+
+blockquote {
+  margin: 0px;
+  font-family: Gallient;
+  letter-spacing: 2px;
+}
+
+.quote{
+    grid-column: 2/3;
+  grid-row: 5/6;
+}
+
+.text2 {
+  grid-column: 2/2;
+  grid-row: 5/6;
+}
+
+
+.gif4 {
+  grid-column: 1/2;
+  grid-row: 5/6;
+}
+
+
+.text3 {
+  grid-column: 1/2;
+  grid-row: 8/9;
+}
+
+.gif2 {
+  grid-column: 1/2;
+  grid-row: 6/7;
+  width: 100%;
+}
+
+.teaser {
+  grid-column: 2/3;
+  grid-row: 6/7;
+}
+
+.text3 {
+  grid-column: 1/2;
+  grid-row: 7/8;
+}
+
+.projeto {
+  grid-column: 1/2;
+  grid-row: 9/10;
+  font-size: 12px;
+}
+
+.cadeira {
+  grid-column: 2/3;
+  grid-row: 9/10;
+  text-align: right;
+  font-size: 12px;
+}
+
+.seta {
+  grid-column: 2/3;
+  grid-row: 8/9;
+  width: 15%;
+  margin-left: 400px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
